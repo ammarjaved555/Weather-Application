@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    background:url('weather.jpeg');
+    background-repeat: no-repeat;
+    background-color: #3C3C44;
+    background-size: 1500px;
+    overflow:hidden;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    padding: 20px 70px;
+    color:#fff;
+    
+}
+.place-container{
+    text-align: center;
+}
+
+.place-container .country{
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.current-info{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 155px;
+    
+}
+.date-container{
+    font-weight: 100;
+    display: flex;
+    flex-direction: column;
+    padding:10px;
+    border-radius: 10px;
+    border: 1px solid #eee;
+    height: 40vh;
+    width: 260px;
+    font-weight: 400;
+}
+.date-container .day{
+    font-size: 35px;
+}
+.date-container .time{
+    font-size: 30px;
+    margin-left: 10px;
+}
+.date-container .time #am-pm{
+    font-size: 15px;
+    
+}
+
+.date-container .date{
+    font-size: 15px;
+}
+
+.current-day-weather {
+        display: flex;
+        height: 150px;
+        width: 300px;
+        margin-left: 10px;
+      flex-direction: row;
+
+}
+.weather-item{
+    flex-direction: row;
+}
+.weather-item .w-icon1{
+    justify-items: flex-start;
+}
+  .current-day-weather .weather-item .temp1{
+    font-size: x-large;
+    font-weight: 500;
+    width: 200px;
+    justify-content: flex-end;
+    margin-left: 130px;
+    margin-top: -75px;
+}
+.current-day-weather .weather-item .temp2{
+    font-size: x-large;
+    font-weight: 500;
+    width: 200px;
+    justify-content: flex-end;
+    margin-left: 70px;
+    margin-top: 30px;
+}
+
+.current-info .others{
+    display: flex;
+    flex-direction: column;
+    background: rgba(10, 10, 10, 0.6);
+    padding:20px;
+    border-radius: 10px;
+    margin: 0 40px;
+    width: 600px;
+    font-size: large;
+  
+}
+.others-items{
+    display: flex;
+    justify-content: space-between; 
+
+}
+
+.current-info .others .weather-item{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.future-forecast{
+    padding: 25px;
+    bottom: 0;
+    display: flex;
+    color:white;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    overflow-y: hidden;
+}
+
+
+.future-forecast .weather-forecast{
+    display: flex;
+    
+}
+
+.weather-forecast .weather-forecast-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 10px;
+    border: 1px solid #eee;
+    padding: 8px;
+    border-radius: 10px;
+    background: rgba(0,0,0,0.2)
+}
+
+.weather-forecast .weather-forecast-item .day{
+    padding: 5px 15px;
+    background: #3C3C44;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.weather-forecast .weather-forecast-item .temp{
+    font-weight: 100;
+    font-size: 12px;
+}
+
+@media only screen and (max-width : 1297px) and (min-width : 1024px){
+    body{ 
+        overflow-y: auto;
+       }
+       .place-container .country{
+        margin-left: 50px;
+    }
+    .date-container{
+        height: 40vh;
+        margin-left: 200px; 
+         
+    }
+    .current-info .others{
+       margin-top: 20px;
+      margin-left: 20px;
+    }
+    
+}
+@media only screen and (max-width : 1024px) and (min-width : 900px) {
+   body{ 
+    overflow-y: auto;
+   }
+   .place-container .country{
+    margin-left: 50px;
+}
+   .place-container{
+    text-align: center;
+}
+    .date-container{
+        height: 40vh;
+        margin-left: 150px; 
+         
+    }
+    .current-info .others{
+       margin-top: 20px;
+     margin-left: -20px;
+      
+    }
+    
+}
+@media only screen and (max-width : 900px) and (min-width :768px){
+    body{ 
+        overflow-y: auto;
+       }
+    .date-container{
+        height: 45vh;
+        margin-left: 70px; 
+       
+         
+    }
+    .current-info .others{
+       margin-top: 20px;
+       margin-left: -80px;
+    }
+    .future-forecast{
+        overflow-y: auto;
+        margin-left: -10px;
+    }
+    .weather-forecast{
+        overflow-y: auto;
+        margin-left: 10px;
+    }
+}
+    @media only screen and (max-width : 768px) and (min-width :600px){
+        body{ 
+            overflow-y: auto;
+           }
+           .place-container .country{
+            margin-left: -10px;
+        }
+        .date-container{
+            height: 45vh;
+            margin-left: -40px; 
+           
+             
+        }
+        .current-info .others{
+           margin-top: 20px;
+           margin-left: -140px;
+           width: 450px;
+          
+        }
+        .future-forecast{
+            overflow-y: auto;
+            margin-left: -10px;
+        }
+        .weather-forecast{
+            overflow-y: auto;
+            margin-left: 20px;
+        }
+    }
+    
+        @media only screen and (max-width : 600px) and (min-width :480px){
+            body{ 
+                overflow-y: auto;
+               }  
+            
+            .place-container .country{
+                margin-left: 30px;
+            }
+            .date-container{
+                height: 45vh;
+                margin-left: -70px; 
+                
+               
+                 
+            }
+            .current-info .others{
+               margin-top: 20px;
+               margin-left: -150px;
+               width: 400px;
+            }
+            .future-forecast{
+                overflow-y: auto;
+                margin-left: -10px;
+            }
+            .weather-forecast{
+                overflow-y: auto;
+                margin-left: 20px;
+            }
+        }
+            @media only screen and (max-width : 480px) and (min-width :320px){
+                body{ 
+                    overflow-y: auto;
+                   }  
+                
+                .place-container .country{
+                    margin-left: -80px;
+                }
+                .date-container{
+                    height: 40vh;
+                    margin-left: -180px; 
+                   
+                     
+                }
+                .current-info .others{
+                   margin-top: 20px;
+                   margin-left: -180px;
+                   width: 250px;
+                }
+                .future-forecast{
+                    overflow-y: auto;
+                    margin-left: -10px;
+                }
+                .weather-forecast{
+                    overflow-y: auto;
+                    margin-left: 20px;
+                }
+            }
+                @media only screen and (max-width : 320px) {
+                
+                    .date-container{
+                        height: 40vh;
+                        margin-left: -180px; 
+                       
+                         
+                    }
+                    .current-info .others{
+                       margin-top: 20px;
+                       margin-left: -180px;
+                       width: 250px;
+                    }}
